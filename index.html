@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="tip_calculator.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>	
+</head>
+
+<body>
+	<h7>by: Matthew Lee</h7>
+	<div id="calculator-wrapper">
+		<div id="calculator-container">
+			<div id="title-container">
+				<span>Tip Calculator</span>
+			</div>
+			<form>
+				<div class="input-container">
+					Bill total ($)<br>
+					<input type="text" id="total" placeholder="100" autocomplete="off">
+				</div>
+				<div class="input-container">
+					Number of people<br>
+					<input type="text" id="people" placeholder="1" autocomplete="off">
+				</div>
+				
+				<fieldset>
+					<legend>Tip percentage (%)</legend>
+					<div class="radio-group">
+						<input type="radio" name="percentage" value="10" id="radio1" class="radio-margin-right">
+						<label for="radio1">10</label>
+					</div>
+
+					<div class="radio-group">
+						<input type="radio" name="percentage" value="15" id="radio2" class="radio-margin-right" checked="checked">
+						<label for="radio2">15</label>
+					</div>
+					<div class="radio-group">
+						<input type="radio" name="percentage" value="18" id="radio3" class="radio-margin-right">
+						<label for="radio3">18</label>
+					</div>
+					<div class="radio-group">
+						<input type="radio" name="percentage" value="20" id="radio4" class="radio-margin-right">
+						<label for="radio4">20</label>
+					</div>
+					<div class="radio-group">
+						<input type="radio" name="percentage" value="25" id="radio5">
+						<label for="radio5">25</label>
+					</div>
+				</fieldset>
+				<input type="submit" class="input-container" value="Calculate" onclick="calculate()">
+			</form>
+		</div>
+		<div id="night-mode-container">
+			<label>Night Mode:</label>
+			<input type="checkbox" id="night-mode">
+		</div>
+	</div>
+
+	<script type="text/javascript" src="tip_calculator.js"></script>
+
+</body>
+</html>
